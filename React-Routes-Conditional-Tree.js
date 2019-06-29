@@ -12,6 +12,8 @@ if (this.props.doneLoading || this.state.unAuthenticated) {
     //PUBLIC ROUTES
     return (
       <Switch>
+        <Route path='/home' component={LoginIn}/>
+        <Route path='/about' component={About}/>
         <Route exact path='/' component={Home}/>
         <Route exact path='/:slug' component={Redirect}/>
         <Route path='/subscribe/:slug' component={Subscribe}/>
